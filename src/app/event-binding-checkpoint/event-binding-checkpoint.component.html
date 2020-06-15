@@ -1,0 +1,8 @@
+<div [style.color] = "color">
+  Event Binding Checkpoint
+</div>
+
+<input #newColor type="text" >
+<button (click)="changeColor(newColor.value)">Change Color</button>
+
+<div class="alert alert-warning" *ngIf='error' style="color:red;">{{errorMessage}}</div>
